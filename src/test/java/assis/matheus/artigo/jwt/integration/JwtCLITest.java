@@ -152,7 +152,7 @@ class JwtCLITest {
         boolean found = false;
 
         for (String line : lines) {
-            if (line.contains("Recuperando a chave de assinatura:")) {
+            if (line.contains("Recuperando a secret:")) {
                 found = true;
                 continue;
             }

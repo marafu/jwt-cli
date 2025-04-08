@@ -45,7 +45,7 @@ class GenerateJWTTest {
         verify(logger, times(1)).info("Gerando token JWT");
         verify(logger, times(1)).info("Token JWT gerado:");
         verify(logger, times(1)).info(generatedToken);
-        verify(logger, times(1)).info("Recuperando a chave de assinatura:");
+        verify(logger, times(1)).info("Recuperando a secret:");
         verify(logger, times(1)).info(signingKey);
     }
 }
