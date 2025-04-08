@@ -86,6 +86,18 @@ all: clean build test
 
 ## 🏁 Como Usar
 
+### Para imprimir o help
+
+```sh
+java -jar target/jwt-cli-0.0.1.jar 
+```
+
+ou
+
+```sh
+java -jar target/jwt-cli-0.0.1.jar --help
+```
+
 ### Gerar um token JWT
 
 ```sh

@@ -33,7 +33,7 @@ public class GenerateJWT {
         
         logger.info("Token JWT gerado:");
         logger.info(token);
-        logger.info("Recuperando a chave de assinatura:");
+        logger.info("Recuperando a secret:");
         logger.info(this.jwt.getSigningKey());
     }
 }
