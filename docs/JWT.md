@@ -266,5 +266,3 @@ Se for necessário implementar JWT em um sistema real, siga **boas práticas de 
 
 8. **`test/unitary`**:  
    - Contém testes unitários para `JJWT`, `Squad` e `Title`, garantindo a conformidade das implementações com os contratos definidos.  
-
-

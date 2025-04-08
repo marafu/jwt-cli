@@ -49,7 +49,7 @@ public class JJWT implements JWT {
             return Jwts.builder()
                        .header().add("typ", "JWT").and()
                        .subject(payload)
-                       .issuer("DevSecOps")
+                       .issuer("Matheus Assis")
                        .audience().add("#appsec").add("#developers").add("#cybersecurity").add("#authentication").add("#medium").and()
                        .issuedAt(new Date())
                        .expiration(new Date(System.currentTimeMillis() + (3600 * 1000L * this.expirationTimeInHour)))
@@ -66,8 +66,11 @@ public class JJWT implements JWT {
             logger.debug("Entrando no método de validação");
             Jwts.parser()
                 .verifyWith(this.key)
-                .requireAudience("GrupoBoticario")
-                .requireIssuer("DevSecOps")
+                .requireAudience("#medium")
+                .requireAudience("#appsec")
+                .requireAudience("#cybersecurity")
+                .requireAudience("#authentication")
+                .requireIssuer("Matheus Assis")
                 .build()
                 .parse(token);
         } catch (ExpiredJwtException e) {
