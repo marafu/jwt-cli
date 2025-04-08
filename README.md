@@ -104,6 +104,20 @@ java -jar target/jwt-cli-0.0.1.jar --help
 java -jar target/jwt-cli-0.0.1.jar --generate --title "Exemplo" --squad "Security"
 ```
 
+#### Exemplo de print de tela
+
+```sh
+java -jar target/jwt-cli-0.0.1.jar --generate --squad "github" --title "README.md"
+[2025-04-08 13:56:44] [INFO]: Gerando token JWT
+[2025-04-08 13:56:44] [INFO]: Artigo README.md criado pela squad github
+[2025-04-08 13:56:45] [INFO]: Token JWT gerado:
+[2025-04-08 13:56:45] [INFO]: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJ0aXRsZVwiOlwiUkVBRE1FLm1kXCIsXCJzcXVhZFwiOlwiZ2l0aHViXCJ9IiwiaXNzIjoiRGV2U2VjT3BzIiwiYXVkIjpbIkdydXBvQm90aWNhcmlvIiwiI2RldmVsb3BlcnMiLCIjc2VjdXJpdHktY2hhbXBpb25zIl0sImlhdCI6MTc0NDEzMTQwNCwiZXhwIjoxNzQ0MTM1MDA0LCJqdGkiOiJjNmQwN2YyMy0yY2FlLTQwM2YtYTBhOS0wOGM5M2Q4N2YwYWMifQ.YHOCxiIvgfwUzIcSdUntc8nc_r-Cu4z_IfFb3Ag8svs
+[2025-04-08 13:56:45] [INFO]: Recuperando a secret:
+[2025-04-08 13:56:45] [INFO]: YjA1YzE4NGMtNTFjZi00YjJiLWE2OWEtMTNiYzQ1OGEzYTg5 
+```
+
+> **Nota**: A secret é gerada dinâmicamente a cada geração, portanto, não existirá dois tokens JWT com a mesma secret!
+
 ### Validar um token JWT
 
 ```sh
