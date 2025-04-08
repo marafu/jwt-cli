@@ -50,7 +50,7 @@ public class JJWT implements JWT {
                        .header().add("typ", "JWT").and()
                        .subject(payload)
                        .issuer("DevSecOps")
-                       .audience().add("GrupoBoticario").add("#developers").add("#security-champions").and()
+                       .audience().add("#appsec").add("#developers").add("#cybersecurity").add("#authentication").add("#medium").and()
                        .issuedAt(new Date())
                        .expiration(new Date(System.currentTimeMillis() + (3600 * 1000L * this.expirationTimeInHour)))
                        .id(UUID.randomUUID().toString())
