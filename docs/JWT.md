@@ -71,9 +71,6 @@ O [JSON Web Key (JWK)](https://www.rfc-editor.org/rfc/rfc7517) é uma estrutura 
 
 ---
 
-Aqui está o conteúdo formatado corretamente em um bloco de código Markdown:  
-
-
 ## Payload do JWT
 
 A segunda parte de um [**JSON Web Token (JWT)**](https://datatracker.ietf.org/doc/html/rfc7519) é o payload. Como já vimos, o payload é composto por claims e segue um formato de codificação semelhante ao do cabeçalho.
