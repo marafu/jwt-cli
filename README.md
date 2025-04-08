@@ -89,19 +89,19 @@ all: clean build test
 ### Gerar um token JWT
 
 ```sh
-java -jar target/jwt-cli-0.0.1.jar generate --title "Exemplo" --squad "Security"
+java -jar target/jwt-cli-0.0.1.jar --generate --title "Exemplo" --squad "Security"
 ```
 
 ### Validar um token JWT
 
 ```sh
-java -jar target/jwt-cli-0.0.1.jar validate --token "seu_token_aqui"
+java -jar target/jwt-cli-0.0.1.jar --validate --token "seu_token_aqui" --secret "secret"
 ```
 
-### Exibir detalhes de um JWT sem validá-lo
+### Exibir detalhes de um JWT
 
 ```sh
-java -jar target/jwt-cli-0.0.1.jar decode --token "seu_token_aqui"
+java -jar target/jwt-cli-0.0.1.jar --restore --token "seu_token_aqui" --secret "secret"
 ```
 
 ## 📜 Licença
