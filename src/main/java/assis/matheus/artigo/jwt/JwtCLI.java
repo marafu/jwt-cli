@@ -108,7 +108,7 @@ public class JwtCLI {
         System.out.println("Uso: java -jar jwt-cli.jar [comando] [opcoes]");
         System.out.println();
         System.out.println("Comandos disponíveis:");
-        System.out.println("Nota: as secrets de todos os token serão usadas com o mesmo token (SIM EU SEI, É INSEGURO!) e com tempo de expiração de 1h");
+        System.out.println("Nota: A secret é gerada dinâmicamente a cada geração, portanto, não existirá dois tokens JWT com a mesma secret!");
         System.out.println("--generate --squad [SQUAD] --title [TITLE]                          Gera um JWT com o payload fornecido em formato JSON");
         System.out.println("--validate --token [TOKEN] --secret [OPCIONAL]                      Valida um JWT fornecido");
         System.out.println("--restore --token [TOKEN] --secret [OPCIONAL]                       Restaura o payload de um JWT");
